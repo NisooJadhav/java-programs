@@ -8,8 +8,6 @@ public class Check_Array_Value {
     System.out.println("array is: " + Arrays.asList(nos));
     System.out.print("enter value to search: ");
     int no = s.nextInt();
-    System.out.println(
-      Arrays.asList(nos).contains(no) ? "value found" : "value not found"
-    );
+    System.out.println(Arrays.binarySearch(nos, no) >= 0 ? "Value found" : "Value not found");
   }
 }
